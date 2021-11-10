@@ -1,0 +1,35 @@
+.track-btn {
+  display: block;
+  overflow: hidden;
+  border-radius: 100px;
+  width: 400px;
+  height: 50px;
+  background-color: #66f;
+  line-height: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+.track-btn>span {
+  position: relative;
+}
+.track-btn::before {
+  --size: 0;
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  background-image: radial-gradient(circle closest-side, #09f, transparent);
+  content: "";
+  transform: translate3d(-50%, -50%, 0);
+  transition: all 200ms ease;
+}
+.track-btn:hover::before {
+  --size: 400px;
+}
+.pr{
+  position: relative;
+}

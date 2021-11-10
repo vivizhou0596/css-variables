@@ -1,0 +1,40 @@
+:root {
+  --icon-color: gray;
+}
+
+.danger {
+  --icon-color: red;
+}
+
+.alert {
+  --icon-color: orange;
+}
+
+.success {
+  --icon-color: green;
+}
+
+.icon-container {
+  display: none;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  margin: 50px 50px;
+}
+
+h2 {
+  padding: 0 0.5em;
+  margin-bottom: 0;
+}
+
+svg {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin: 10px auto;
+}

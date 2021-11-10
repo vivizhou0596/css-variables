@@ -1,0 +1,25 @@
+.strip-loading {
+	width: 200px;
+	height: 200px;
+}
+.strip-loading li{
+  --time: calc((var(--line-index) - 1) * 200ms);
+  border-radius: 3px;
+  width: 8px;
+  height: 60px;
+  background-color: #f66;
+  animation: beat 2s ease-in-out var(--time) infinite;
+}
+.strip-loading li+li{
+  margin-left: 10px;
+}
+
+@keyframes beat {
+	0%,
+	100% {
+		transform: scaleY(1);
+	}
+	50% {
+		transform: scaleY(.5);
+	}
+}
